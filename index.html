@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/pi.ico">
+    <title>Wisielec</title>
+    <meta name="description" content="Wisielec">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="PROINFO Adam Świątek">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="hasla.js?version=1.0"></script>
+
+    <style>
+        .bt-teal, .bt-hover-teal:hover {
+            color: #fff !important;
+            background-color: #009688 !important;
+        }
+
+        .bt-btn, .bt-button {
+            margin: 5px;
+            border: none;
+            display: inline-block;
+            outline: 0;
+            padding: 8px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            background-color: inherit;
+            text-align: center;
+            cursor: pointer;
+            white-space: nowrap;
+            width: 40px;
+        }
+
+            .bt-button:hover:enabled {
+                color: #009688 !important;
+                border-color: #009688 !important;
+                background-color: #fff !important;
+            }
+
+
+            .bt-disabled, .bt-button:disabled {
+                cursor: not-allowed;
+                opacity: 0.3;
+            }
+
+                .bt-disabled *, :disabled * {
+                    pointer-events: none;
+                }
+
+        .bt-border {
+            border: 1px solid #009688 !important;
+        }
+
+        #inner {
+            text-align: center;
+        }
+
+        .hasloLitera {
+            border-color: black;
+            border-bottom: solid;
+            border-width: 2px;
+            width: 18px;
+            height: 20px;
+            padding-left: 3px;
+            font-size: 20px;
+            margin-left: 3px;
+            display: inline-block;
+        }
+
+        .hasloPustaLitera {
+            width: 18px;
+            height: 20px;
+            padding-left: 3px;
+            font-size: 20px;
+            display: inline-block;
+        }
+
+        .haslo {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onkeydown="keyDown(event)">
+    <div id="inner">
+        <object style="margin-left:3px" id="svg_element" type="image/svg+xml" data="wisielec.svg"></object>
+    </div>
+
+    <div id="haslo" class="haslo">
+    </div>
+    <div id="podpowiedz" class="haslo">
+    </div>
+    <div>
+        <div id="inner">
+            <button id="btn_A" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">A</button>
+            <button id="btn_AA" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ą</button>
+            <button id="btn_B" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">B</button>
+            <button id="btn_C" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">C</button>
+            <button id="btn_CC" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ć</button>
+            <button id="btn_D" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">D</button>
+            <button id="btn_E" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">E</button>
+            <button id="btn_EE" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ę</button>
+            <button id="btn_F" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">F</button>
+            <button id="btn_G" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">G</button>
+            <button id="btn_H" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">H</button>
+            <button id="btn_I" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">I</button>
+        </div>
+        <div id="inner">
+            <button id="btn_J" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">J</button>
+            <button id="btn_K" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">K</button>
+            <button id="btn_L" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">L</button>
+            <button id="btn_LL" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ł</button>
+            <button id="btn_M" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">M</button>
+            <button id="btn_N" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">N</button>
+            <button id="btn_NN" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ń</button>
+            <button id="btn_O" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">O</button>
+            <button id="btn_OO" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ó</button>
+            <button id="btn_P" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">P</button>
+            <button id="btn_Q" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Q</button>
+            <button id="btn_R" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">R</button>
+        </div>
+        <div id="inner">
+            <button id="btn_S" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">S</button>
+            <button id="btn_SS" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ś</button>
+            <button id="btn_T" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">T</button>
+            <button id="btn_U" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">U</button>
+            <button id="btn_W" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">W</button>
+            <button id="btn_V" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">V</button>
+            <button id="btn_X" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">X</button>
+            <button id="btn_Y" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Y</button>
+            <button id="btn_Z" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Z</button>
+            <button id="btn_ZZ" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ź</button>
+            <button id="btn_ZZZ" class="bt-button bt-teal bt-border" onclick="buttonClick(this)">Ż</button>
+        </div>
+    </div>
+    <script>
+        //represents counter (how many wrong letter user click - max 7)
+        let wrongLetter = 0;
+        //SVG content
+        let svgContent = null;
+        //text that user was searching
+        let searchText = "Adam zrobił wisielca";
+        //variable is set when game is ended
+        let koniecGry = false;
+
+        //funtion tell that some key in keyboard was pressed
+        function keyDown(event) {
+            if (koniecGry)
+                return;
+            let letterC = event.key.toUpperCase();
+
+            if (letterC == "Ą")
+                letterC = "AA";
+            else if (letterC == "Ć")
+                letterC = "CC";
+            else if (letterC == "Ę")
+                letterC = "EE";
+            else if (letterC == "Ł")
+                letterC = "LL";
+            else if (letterC == "Ń")
+                letterC = "NN";
+            else if (letterC == "Ó")
+                letterC = "OO";
+            else if (letterC == "Ś")
+                letterC = "SS";
+            else if (letterC == "Ź")
+                letterC = "ZZ";
+            else if (letterC == "Ż")
+                letterC = "ZZZ";
+
+            //find button from document
+            let button = document.getElementById("btn_" + letterC);
+            //set button distabled
+            if (button.disabled)
+                return;
+
+            findLetter(event.key.toUpperCase());
+        }
+
+        //function run when some button was clicked
+        function buttonClick(event) {
+            if (koniecGry)
+                return;
+            findLetter(event.innerText.toUpperCase());
+        }
+
+        //function search that text contains letter
+        function findLetter(letter) {
+            if (searchText.toUpperCase().includes(letter)) {
+                let divElements = document.getElementById("haslo").children;
+                let complete = true;
+                for (i = 0; i < divElements.length; i++) {
+                    if (divElements[i].getAttribute("letter").toUpperCase() == letter) {
+                        divElements[i].innerHTML = letter;
+                    }
+                    if (divElements[i].innerHTML == "")
+                        complete = false;
+                }
+                if (complete && !koniecGry) {
+                    document.getElementById("svg_element").setAttribute("data", "win.svg");
+                    koniecGry = true;
+                    relaod();
+                }
+            }
+            else {
+                ++wrongLetter;
+                if (wrongLetter == 1) {
+                    let element = svgContent.getElementById("glowa");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 2) {
+                    let element = svgContent.getElementById("szyja");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 3) {
+                    let element = svgContent.getElementById("tlow");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 4) {
+                    let element = svgContent.getElementById("lewa_reka");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 5) {
+                    let element = svgContent.getElementById("prawa_reka");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 6) {
+                    let element = svgContent.getElementById("lewa_noga");
+                    element.setAttribute("visibility", "visible");
+                }
+                else if (wrongLetter == 7) {
+                    let element = svgContent.getElementById("prawa_noga");
+                    //element.setAttribute("visibility", "visible");
+                    document.getElementById("svg_element").setAttribute("data", "lose.svg");
+                    koniecGry = true;
+                    let divElements = document.getElementById("haslo").children;
+                    for (i = 0; i < divElements.length; i++) {
+                        divElements[i].innerHTML = searchText[i];
+                    }
+                    relaod();
+                }
+            }
+
+            let letterC = letter;
+
+            if (letter == "Ą")
+                letterC = "AA";
+            else if (letter == "Ć")
+                letterC = "CC";
+            else if (letter == "Ę")
+                letterC = "EE";
+            else if (letter == "Ł")
+                letterC = "LL";
+            else if (letter == "Ń")
+                letterC = "NN";
+            else if (letter == "Ó")
+                letterC = "OO";
+            else if (letter == "Ś")
+                letterC = "SS";
+            else if (letter == "Ź")
+                letterC = "ZZ";
+            else if (letter == "Ż")
+                letterC = "ZZZ";
+
+            //find button from document
+            let button = document.getElementById("btn_" + letterC);
+            //set button distabled
+            button.disabled = true;
+        }
+
+        //generate divs text. One div is one letter of word.
+        function generateTextDivs() {
+            document.getElementById("haslo").innerHTML = "";
+            let str = dictionary[Math.floor(Math.random() * Object.keys(dictionary).length)];
+            let res = str.split("|");
+            document.getElementById("podpowiedz").innerHTML = "<h4>(" + res[0] + ")</h4>";
+            searchText = res[1].toUpperCase().trim();
+            for (let i = 0; i < searchText.length; i++) {
+                var iDiv = document.createElement("div");
+                iDiv.id = 'h_' + i;
+                document.getElementById("haslo").appendChild(iDiv);
+                var att = document.createAttribute("letter");       // Create a "class" attribute
+                att.value = searchText[i];                           // Set the value of the class attribute
+                iDiv.setAttributeNode(att);
+                if (searchText[i] == " ") {
+                    iDiv.innerHTML = " ";
+                    iDiv.className = "hasloPustaLitera";
+                }
+                else {
+                    iDiv.className = "hasloLitera";
+                }
+            }
+        }
+
+        function relaod() {
+
+            document.getElementById("podpowiedz").innerHTML = "";
+            let button = document.createElement("button");
+            button.innerHTML = "Graj ponownie";
+            button.setAttribute("class", "bt-button bt-teal bt-border");
+            button.style.width = "110px";
+            document.getElementById("podpowiedz").appendChild(button);
+
+            button.addEventListener("click", function () {
+                location.reload();
+            });
+        }
+
+        window.onload = function () {
+            //console.log(Object.keys(dictionary).length);
+            //for (var key in dictionary)
+            //{
+            //    console.log(dictionary[key]);
+            //}
+            generateTextDivs();
+            //find svg element
+            svgContent = document.getElementById("svg_element").contentDocument;
+            //find head and hide it
+            let element = svgContent.getElementById("glowa");
+            element.setAttribute("visibility", "hidden");
+            //find torso and hide it
+            element = svgContent.getElementById("szyja");
+            element.setAttribute("visibility", "hidden");
+            //find head and hide it
+            element = svgContent.getElementById("tlow");
+            element.setAttribute("visibility", "hidden");
+            //find right hand and hide it
+            element = svgContent.getElementById("prawa_reka");
+            element.setAttribute("visibility", "hidden");
+            //find left hand and hide it
+            element = svgContent.getElementById("lewa_reka");
+            element.setAttribute("visibility", "hidden");
+            //find right leg and hide it
+            element = svgContent.getElementById("prawa_noga");
+            element.setAttribute("visibility", "hidden");
+            //find left leg and hide it
+            element = svgContent.getElementById("lewa_noga");
+            element.setAttribute("visibility", "hidden");
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<svg width="230.00000000000003" height="310.00000000000006" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+  <circle class="glowa" visibility="hidden" id="glowa" r="15" cy="64.80362" cx="165.68036" stroke-width="5" stroke="#000000" fill="#000000"/>
+  <line stroke="#000000" visibility="hidden" class="tlow" id="tlow" y2="139.80362" x2="167.36785" y1="91.58487" x1="166.5241" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="prawa_reka" visibility="hidden" stroke="#000000" id="prawa_reka" y2="92.55362" x2="165.7741" y1="112.52241" x1="197.2897" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="lewa_reka" visibility="hidden" stroke="#000000" id="lewa_reka" y2="111.77241" x2="135.0397" y1="93.49116" x1="166.1022" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="lewa_noga" visibility="hidden" id="lewa_noga" stroke="#000000" y2="164.77241" x2="135.46158" y1="139.47553" x1="166.73501" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="prawa_noga" visibility="hidden" id="prawa_noga" y2="138.63178" x2="166.94595" y1="164.77241" x1="198.46158" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <line class="podstawa_lewa" id="podstawa_lewa" y2="192.63175" x2="52.5241" y1="225.538" x1="27.63347" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <line class="podstawa_prawa" stroke="#000000" id="podstawa_prawa" y2="192.20991" x2="51.98501" y1="225.11616" x1="76.03188" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="dluga_belka" id="dluga_belka" y2="15.02237" x2="51.35222" y1="193.4755" x1="51.7741" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <line class="krotka_belka" stroke="#000000" id="krotka_belka" y2="12.06924" x2="165.68035" y1="51.30362" x1="166.10223" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="srednia_belka" stroke="#000000" id="srednia_belka" y2="14.60049" x2="167.2741" y1="16.70987" x1="49.57096" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none"/>
+  <line class="podpora_belki" id="podpora_belki" y2="17.55362" x2="79.61785" y1="45.39737" x1="51.7741" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+  <rect class="podest" stroke="#000000" id="podest" height="67.5" width="197.01563" y="225.11613" x="17.80151" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="#000000"/>
+  <line class="szyja" visibility="hidden" id="szyja" y2="78.93649" x2="166.10219" y1="92.22555" x1="166.735" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none"/>
+</svg>
